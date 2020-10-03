@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Karachi_24_site_test/precache-manifest.bbf68ae4f7cdd71b2ea598f5df53312b.js"
+  "/Karachi_24_site_test/precache-manifest.7763da13c3039fcdbefcd00c3dac24d1.js"
 );
 
 self.addEventListener('message', (event) => {
