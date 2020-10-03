@@ -1,5 +1,5 @@
-{ 
-  "homepage": "http://VolVox99.github.io/Karachi_24_site_test",
+{
+  "homepage": "http://VolVox99.github.io/",
   "name": "karachi_test",
   "version": "0.1.0",
   "private": true,
@@ -36,7 +36,6 @@
       "last 1 safari version"
     ]
   },
-
   "devDependencies": {
     "gh-pages": "^3.1.0"
   }

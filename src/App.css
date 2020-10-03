@@ -56,35 +56,36 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
-  margin-right: 10vw;
-  margin-left: 7vw;
-  margin-top: 6vh;
-  margin-bottom: 1vh;
+  margin: 5vh 7vw;
+  width: 50vw;
   
   
 }
 
 
-.testTweet {
-  padding: 1vh 0px;
-  
-}
 
 
 /* wordcloud and paragraph */
 .AppBody-right{
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
-  position: absolute;
-  top: 30vh;
-  left: 45vw;
+  width: 50vw;
   border-left: 1px solid black;
 
+}
+
+/* app body left and right */
+#home-content{
+  display: flex;
+  flex-direction: row;
+  margin: 5vh 0px;
 }
 
 
 .wordCloud {
   width: 50vw;
+ 
 
   
 }
@@ -97,7 +98,6 @@
 }
 
 .par-title {
-  /* position: relative; */
   left: 20vw;
   text-decoration: underline;
   
@@ -110,7 +110,7 @@
   font-size: 3vh;
   display: grid;
   color: black;
-  top: 4vh;
+  top: 5vh;
   right: 2vw;
   padding-bottom: 0px;
   font-weight: bold;
@@ -189,6 +189,11 @@
   justify-content: space-around;
   background-color: rgb(79, 183, 214);
   position: relative;
+  width: 100%; 
+  bottom: 0vh;
+  margin-top: 5vh;
+  font-weight: bold;
+  background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.publicdomainpictures.net%2Fpictures%2F80000%2Fvelka%2Fblue-background-waves-13923163600ev.jpg&f=1&nofb=1');
  
 }
 
@@ -243,7 +248,7 @@
   display: flex;
   flex-direction: column;
   margin: auto;
-  margin-bottom: 8vh;
+  margin-bottom: 9vh;
   justify-content: space-around;
   align-items: center;
 

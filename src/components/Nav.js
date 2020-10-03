@@ -8,7 +8,7 @@ class Nav extends Component {
             isClicked_about: false,
             isClicked_breaking_news: false,
             isClicked_contact: false,
-            isClicked_home: false
+            isClicked_home: true
         }
     }
 

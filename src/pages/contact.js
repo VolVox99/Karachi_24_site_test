@@ -1,6 +1,6 @@
 import React from 'react'
 
-class App extends React.Component {
+class Form extends React.Component {
     constructor() {
       super();
       this.state = {
@@ -35,6 +35,7 @@ class App extends React.Component {
                 </div>
                 <button type="submit" className="btn-primary">Submit</button>
             </form>
+            
           </div>
       );
     }
@@ -55,4 +56,4 @@ class App extends React.Component {
     }
   }
   
-export default App;
+export default Form;
