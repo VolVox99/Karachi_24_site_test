@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import TweetElement from 'C:/Users/Ali R/Desktop/Code/Node/karachi_test/src/components/tweet.js'
-import MainParagraph from 'C:/Users/Ali R/Desktop/Code/Node/karachi_test/src/components/mainParagraph.js'
+import TweetElement from '../components/tweet.js'
+import MainParagraph from '../components/mainParagraph'
 
 class Home extends Component {
 

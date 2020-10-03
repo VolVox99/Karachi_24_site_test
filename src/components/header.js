@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import DisplayTime from 'C:/Users/Ali R/Desktop/Code/Node/karachi_test/src/components/time.js'
+import DisplayTime from '../components/time'
 import Nav from './nav.js'
-import Title from 'C:/Users/Ali R/Desktop/Code/Node/karachi_test/src/components/title.js'
+import Title from '../components/title.js'
 
 class Header extends Component {
     render() {

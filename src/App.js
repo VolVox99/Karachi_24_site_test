@@ -19,8 +19,9 @@ function App() {
 
         <Switch>
           <Route path = '/about'  component = {About}/>
-          <Route path = '/breaking-news' component = {BreakingNews}/>
+          <Route path = '/breaking-news'component = {BreakingNews}/>
           <Route path = '/contact' component = {Contact}/>
+          <Route path = '/contact?' component = {Contact}/>
           <Route path = '/' component = {Home}/>
         </Switch>
         
