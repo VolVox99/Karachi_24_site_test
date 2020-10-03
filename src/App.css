@@ -1,12 +1,7 @@
 .App{
   background-color: white;
-  
-  
 
-
- 
 }
-
 
 
 .App-header {
@@ -26,17 +21,16 @@
 }
 
 .App-logo {
-  position: absolute;
-  top: 1vh;
-  left: 1vw;
-  width: 10vw;
+  position: relative;
+  width: 16vw;
+  right: 43vw;
   
 }
 
 
 .Title {
   position: absolute;
-  left: 20vw;
+  left: 18vw;
   font-size: 6vh;
  
 
@@ -62,20 +56,22 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: left;
-  position: relative;
-  left: 4vw;
+  margin-right: 10vw;
+  margin-left: 7vw;
+  margin-top: 6vh;
+  margin-bottom: 1vh;
   
-
+  
 }
 
 
 .testTweet {
-  margin: 1vh 0px;
+  padding: 1vh 0px;
   
-
 }
 
 
+/* wordcloud and paragraph */
 .AppBody-right{
   display: flex;
   flex-direction: column;
@@ -83,14 +79,11 @@
   top: 30vh;
   left: 45vw;
   border-left: 1px solid black;
-  padding-left: 30px;
-
 
 }
 
 
 .wordCloud {
- 
   width: 50vw;
 
   
@@ -98,14 +91,13 @@
 
 .main-par{
   color: black;
-  margin: 10vh 0px;
-  margin-right: 3vw;
-  text-indent: 50px;
+  margin: 10vh 5vh;
+  text-indent: 5vh;
   line-height: 1.8;
 }
 
 .par-title {
-  position: relative;
+  /* position: relative; */
   left: 20vw;
   text-decoration: underline;
   
@@ -120,16 +112,11 @@
   color: black;
   top: 4vh;
   right: 2vw;
-  margin-bottom: 0px;
+  padding-bottom: 0px;
   font-weight: bold;
 }
 
-.current_elem {
-  position: absolute;
-  top: 7vh;
-  right: 33vw;
-  color: black;
-}
+
 
 
 .header_elem_1 {
@@ -138,11 +125,12 @@
   justify-content: space-around;
   padding: 0px 1vw;
 
+
 }
 
 
 .header_elem_1:hover {
-  color:white
+  text-decoration: underline;
 }
 
 
@@ -155,7 +143,7 @@
 }
 
 .header_elem_2:hover {
-  color:white
+  text-decoration: underline;
 }
 
 
@@ -166,10 +154,13 @@
   padding: 0px 1vw;
 }
 
-.header_elem_3:hover {
-  color:white
-}
 
+
+
+
+.header_elem_3:hover {
+  text-decoration: underline;
+}
 
 
 .header_elem_4 {
@@ -181,10 +172,16 @@
 }
 
 .header_elem_4:hover {
-  color:white
+  text-decoration: underline;
 }
 
 
+#current-element {
+  border: 5px solid white;
+  position: relative;
+  bottom: 4vh;
+  font-size: 5vh;
+}
 
 .footer_container {
   border-top: 2px solid black;
@@ -192,8 +189,6 @@
   justify-content: space-around;
   background-color: rgb(79, 183, 214);
   position: relative;
-  
- 
  
 }
 
@@ -228,5 +223,55 @@
   padding: 0px 10vw;
   
 }
+
+
+.about-par {
+  font-size: 30px;
+  padding: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.about-title {
+  position: relative;
+  left: 39vw;
+  margin-top: 10vh;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 8vh;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.form-group {
+  margin: 5vh;
+}
+
+.btn-primary {
+  width: 5vw;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.form-label {
+  margin: 1vw;
+}
+
+
+#breaking-news-chart {
+  width: 95vw;
+  height: 80vh;
+  position: relative;
+ 
+}
+
 
 

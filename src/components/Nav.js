@@ -1,29 +1,79 @@
 import React, { Component } from 'react'
+import {Link} from 'react-router-dom'
 
 class Nav extends Component {
-    render() {
-
-            return (
-                <div className ={this.props.containerName}>
-                    <ul className = {`${this.props.className}_elem_1`}>Home</ul>
-                    <ul className = {`${this.props.className}_elem_2`}>Breaking News</ul>
-                    <ul className = {`${this.props.className}_elem_3`}>About</ul>
-                    <ul className = {`${this.props.className}_elem_4`}>Contact</ul>
-                </div>
-            ) 
+    constructor(){
+        super()
+        this.state = {
+            isClicked_about: false,
+            isClicked_breaking_news: false,
+            isClicked_contact: false,
+            isClicked_home: false
+        }
     }
-}
 
+ 
 
-
-class CurrentNav extends Component {
     render() {
+        //TODO it also makes the footer elements big if we click on them so pass in a prop and do an if else to fix that
         return (
-            <h2 className = {this.props.className}>{this.props.elem}</h2>
-                
+            <div className = {this.props.containerName}>
+
+               
+                <ul className = {`${this.props.className}_elem_1`}> 
+                    <Link to = '/' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_home ? '0px solid white': 'none', fontSize: this.state.isClicked_home && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
+                        isClicked_about: false,
+                        isClicked_breaking_news: false, 
+                        isClicked_contact: false,
+                        isClicked_home: true
+                    })}>
+                        Home
+                    </Link>
+                </ul>
+            
+            
+                <ul className = {`${this.props.className}_elem_2`} >
+                    <Link to = '/breaking-news' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_breaking_news ? '0px solid white': 'none', fontSize: this.state.isClicked_breaking_news && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
+                        isClicked_breaking_news: true,
+                        isClicked_about: false,
+                        isClicked_contact: false,
+                        isClicked_home: false
+                    })}>
+                        Breaking News
+                    </Link>
+                </ul>
+            
+
+            
+                <ul className = {`${this.props.className}_elem_3`}>
+                    <Link to = 'about' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_about ? '0px solid white': 'none', fontSize: this.state.isClicked_about && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
+                        isClicked_about: true,
+                        isClicked_breaking_news: false, 
+                        isClicked_contact: false,
+                        isClicked_home: false
+                    })}>
+                        About
+                    </Link>
+                </ul>
+            
+
+        
+                <ul className = {`${this.props.className}_elem_4`}>
+                    <Link to = 'contact' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_contact ? '0px solid white': 'none', fontSize: this.state.isClicked_contact && this.props.header ? '5vh': ''}} onClick = {() => this.setState({
+                        isClicked_about: false,
+                        isClicked_breaking_news: false, 
+                        isClicked_contact: true,
+                        isClicked_home: false
+                    })}>
+                        Contact
+                    </Link>
+                </ul>
+            
+            </div>
         )
     }
+
 }
 
 
-export  {Nav, CurrentNav}
+export default Nav
