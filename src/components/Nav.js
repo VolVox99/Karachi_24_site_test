@@ -12,21 +12,20 @@ class Nav extends Component {
         }
     }
 
- 
-
     render() {
-        //TODO it also makes the footer elements big if we click on them so pass in a prop and do an if else to fix that
+    
         return (
             <div className = {this.props.containerName}>
 
+
                
                 <ul className = {`${this.props.className}_elem_1`}> 
-                    <Link to = '/' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_home ? '0px solid white': 'none', fontSize: this.state.isClicked_home && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
+                    <Link to = '/home' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_home ? '0px solid white': 'none', fontSize: this.state.isClicked_home && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
                         isClicked_about: false,
                         isClicked_breaking_news: false, 
                         isClicked_contact: false,
                         isClicked_home: true
-                    })}>
+                    }, window.scrollTo(0,0))}>
                         Home
                     </Link>
                 </ul>
@@ -46,7 +45,7 @@ class Nav extends Component {
 
             
                 <ul className = {`${this.props.className}_elem_3`}>
-                    <Link to = 'about' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_about ? '0px solid white': 'none', fontSize: this.state.isClicked_about && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
+                    <Link to = '/about' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_about ? '0px solid white': 'none', fontSize: this.state.isClicked_about && this.props.header ?'5vh': ''}} onClick = {() => this.setState({
                         isClicked_about: true,
                         isClicked_breaking_news: false, 
                         isClicked_contact: false,
@@ -59,7 +58,7 @@ class Nav extends Component {
 
         
                 <ul className = {`${this.props.className}_elem_4`}>
-                    <Link to = 'contact' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_contact ? '0px solid white': 'none', fontSize: this.state.isClicked_contact && this.props.header ? '5vh': ''}} onClick = {() => this.setState({
+                    <Link to = '/contact' style={{textDecoration: 'none', color: 'black', border: this.state.isClicked_contact ? '0px solid white': 'none', fontSize: this.state.isClicked_contact && this.props.header ? '5vh': ''}} onClick = {() => this.setState({
                         isClicked_about: false,
                         isClicked_breaking_news: false, 
                         isClicked_contact: true,
@@ -68,6 +67,8 @@ class Nav extends Component {
                         Contact
                     </Link>
                 </ul>
+
+
             
             </div>
         )

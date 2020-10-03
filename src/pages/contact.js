@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 class Form extends React.Component {
     constructor() {
       super();
@@ -9,10 +10,6 @@ class Form extends React.Component {
         message: ''
       }
     }
-
-    componentDidMount() {
-        window.scrollTo(0, 0)
-      }
   
     render() {
       return(
@@ -50,9 +47,12 @@ class Form extends React.Component {
   
     onMessageChange(event) {
       this.setState({message: event.target.value})
+      
     }
   
     handleSubmit(event) {
+      this.props.history.push('/contact-submit')
+    
     }
   }
   

@@ -4,20 +4,16 @@ import React, { Component } from 'react'
 class DisplayTime extends Component {
     constructor(){
         super()
-        this.initial_time = new Date().toLocaleString()
         this.state = {
-            time: this.initial_time.split(', ')[1]
-    
+            time: new Date().toLocaleTimeString()
         }
     }
 
     
     componentDidMount() {
         setInterval(() => {
-            let time_to_pass = new Date().toLocaleString()
-            time_to_pass = time_to_pass.split(',')[1]
             this.setState({
-                time: time_to_pass
+                time: new Date().toLocaleTimeString()
          
           })
         }, 1000)

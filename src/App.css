@@ -24,14 +24,15 @@
   position: relative;
   width: 16vw;
   right: 43vw;
-  
+  top: 14vh;
 }
 
 
 .Title {
-  position: absolute;
-  left: 18vw;
-  font-size: 6vh;
+  position: relative;
+  right: 13vw;
+  font-size: 170%;
+  bottom: 16vh;
  
 
   
@@ -239,9 +240,7 @@
 
 
 .about-title {
-  position: relative;
-  left: 39vw;
-  margin-top: 10vh;
+  text-align: center;
 }
 
 .contact-form {
@@ -278,5 +277,14 @@
  
 }
 
+#contact-submit {
+  text-align: center;
+}
 
-
+#submit-form-img {
+  display: block;
+  justify-content: center;
+  margin: auto;
+  margin-left: 40vw;
+  height: 52vh;
+}
