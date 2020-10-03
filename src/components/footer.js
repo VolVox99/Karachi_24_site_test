@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Nav from './nav.js'
+import Nav from '../components/Nav.js'
 
 class Footer extends Component {
     render() {
